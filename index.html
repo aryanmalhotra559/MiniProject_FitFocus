@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FitFocus</title>
+  <link href="styling.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="bg-light text-dark">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <nav class="navbar navbar fixed-top" style="background-image: url('IMG_8548.png');background-size: 100% 100%;">
+    <div class="container-fluid">
+      <a class="navbar-link nav-link" style="font-size: 3.0rem;margin-left:1.5%;color:#b0903d;" href="index.html">Fit<span class="material-symbols-outlined" style="color:white;font-size: 2.1rem;">fitness_center</span>Focus</a>
+      <span style="margin-left: 60%;">
+      <a class="navbar-link nav-link text-light active-text-danger" style="font-size: 1.2rem;" href="about.html">About Us</a>
+      </span>
+      <span>
+      <a class="navbar-link nav-link text-light" style="font-size: 1.2rem;" href="contact.html">Contact Us</a>
+      </span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="color:white;background-color: white;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header" style="background-color: #233040;">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-size: 1.8rem;text-decoration: underline;color:#b0903d;">Fit<span class="material-symbols-outlined" style="color:white;">fitness_center</span>Focus</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" style="background-color: #233040;">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link text-light" aria-current="page" href="profile.html"><span class="material-symbols-outlined">person</span>&nbsp&nbsp Profile</a>
+            </li>
+            <hr style="color:white">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="bmi.html"><span class="material-symbols-outlined">calculate</span>&nbsp&nbsp BMI Calculator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="workout.html"><span class="material-symbols-outlined">exercise</span>&nbsp&nbsp Workouts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="calorie.html"><span class="material-symbols-outlined">functions</span>&nbsp&nbsp Calorie calculator</a>
+            </li>
+            <hr style="color:white">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="login.html"><span class="material-symbols-outlined">login</span>&nbsp&nbsp Sign Up/Log In</a>
+            </li>
+            <li class="nav-item" style="position: absolute;bottom:15px;">
+              <a class="nav-link text-light" href="profile.html"><span class="material-symbols-outlined">settings</span>&nbsp&nbsp Settings</a>
+            </li>
+            <li class="nav-item" style="position: absolute;bottom:65px;">
+              <a class="nav-link text-light" href="contact.html"><span class="material-symbols-outlined">help</span>&nbsp&nbsp Need Help</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="margin-top:8%;height:30%;width:98%;margin-left:1%;">
+    <div class="carousel-indicators" style="width:70%">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="IMG_8517.jpg" class="d-block w-100" alt="Compete" data-bs-interval="1000" style="height:700px;border-radius: 40px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="font-size:30px;">Get pre-recorded workouts!</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="IMG_8516.jpg" class="d-block w-100" alt="Log" data-bs-interval="1000" style="height: 700px;border-radius: 40px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="font-size:30px;">Eat up your calories!</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="IMG_8515.jpg" class="d-block w-100" alt="Healthy" data-bs-interval="1000" style="height: 700px;border-radius: 40px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="font-size:30px;">Stay FIT with FitFocus!!</h5>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br><br><br><br><br><br><br><br>
+  <div style="text-align: center;">
+    <h7 style="font-size: 50px;">With <a style="color:#b0903d;">Fit<span class="material-symbols-outlined" style="color:black;font-size: 40px;">fitness_center</span>Focus</a> You Can</h7>
+  </div>
+  <br><br>
+  <div class="features">
+    <div class="subfeatures">
+      <h8 style="font-size: 20px;color:#b0903d;"><b>Get pre-recorded workouts</b></h8>
+      <br><br>
+      <p style="color:black;font-size:17px;">In FitFocus, you can get loads of pre-recorded workouts. Pick whichever workout you want to do and get started with it!</p>
+      <img src="indexfriends.png" style="height:200px;width:60%;">
+    </div>
+    <div class="subfeatures">
+      <h8 style="font-size: 20px;color:#b0903d;"><b>Calculate your calorie</b></h9>
+      <br><br>
+      <p style="color:black;font-size:17px;">FitFocus helps you calculate the required calorie intake for you. This feature ensures that you consume the right amount of calorie per day, and stay motivated to achieve your fitness goals.</p>
+      <img src="calorie calculator-removebg-preview.png" style="height:200px;width:55%;">
+    </div>
+  </div>
+  <div class="features">
+    <div class="subfeatures">
+      <h8 style="font-size: 20px;color:#b0903d;"><b>Check your BMI</b></h8>
+      <br><br>
+      <p style="color:black;font-size:17px;">FitFocus' BMI feature calculates your Body Mass Index based on height and weight, aiding in goal setting and tracking progress towards a healthier weight and lifestyle.</p>
+      <br>
+      <img src="BMI.png" style="height:50%;">
+    </div>
+    <div class="subfeatures">
+      <h8 style="font-size: 20px;color:#b0903d;"><b>Stay fit</b></h8>
+      <br><br>
+      <p style="color:black;font-size:17px;">FitFocus empowers you to live a healthier, fitter life by offering tools to track workouts, set goals, compete with friends, and monitor progress. Achieve your fitness goals and maintain a healthy lifestyle with FitFocus.</p>
+      <img src="indeximg.png" style="height:45%;width:50%;">
+    </div>
+  </div>
+  <footer class="mainfoot">
+    <div class="foot">
+      <h9 style="font-size: 20px;color:white;"><b>About Us</b></h9>
+      <br><br>
+      <p>FitFocus is your ultimate fitness companion, offering a range of features to support your journey to a healthier lifestyle. Track your calories, set personalized goals, compete with friends, and monitor your progress with ease. Whether you're a fitness enthusiast or just starting, FitFocus is your key to a fitter, healthier you.</p>
+    </div>
+    <div class="foot">
+      <h9 style="font-size: 20px;color:white;"><b>News Letter</b></h9>
+      <br><br>
+      <p>Sign up for the latest products and updates</p>
+      <br>
+      <h9 style="font-size: 20px;color:white;"><b>Follow Us On</b></h9>
+      <br><br>
+      <a href="#" class="fa fa-facebook"></a>&nbsp&nbsp<a href="#" class="fa fa-twitter"></a>&nbsp&nbsp<a href="#" class="fa fa-linkedin"></a>
+    </div>
+  </footer>
+</body>
+
+</html>

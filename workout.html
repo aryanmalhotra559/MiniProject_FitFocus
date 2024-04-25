@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FitFocus</title>
+  <link href="styling.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="bg-light text-dark" class="workout">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <nav class="navbar navbar fixed-top" style="background-image: url('IMG_8548.png');background-size: 100% 100%;">
+    <div class="container-fluid">
+      <a class="navbar-link nav-link" style="font-size: 3.0rem;margin-left:20px;color:#b0903d;"
+        href="index.html">Fit<span class="material-symbols-outlined"
+          style="color:white;font-size: 2.1rem;">fitness_center</span>Focus</a>
+      <span style="margin-left: 60%;">
+        <a class="navbar-link nav-link text-light active-text-danger" style="font-size: 1.2rem;" href="about.html">About
+          Us</a>
+      </span>
+      <span>
+        <a class="navbar-link nav-link text-light" style="font-size: 1.2rem;" href="contact.html">Contact Us</a>
+      </span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="color:white;background-color: white;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header" style="background-color: #233040;">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"
+            style="font-size: 1.8rem;text-decoration: underline;color:#b0903d;">Fit<span
+              class="material-symbols-outlined" style="color:white;">fitness_center</span>Focus</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" style="background-color: #233040;">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link text-light" aria-current="page" href="profile.html"><span
+                  class="material-symbols-outlined">person</span>&nbsp&nbsp Profile</a>
+            </li>
+            <hr style="color:white">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="bmi.html"><span
+                  class="material-symbols-outlined">calculate</span>&nbsp&nbsp BMI Calculator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="workout.html"><span
+                  class="material-symbols-outlined">exercise</span>&nbsp&nbsp Workouts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="calorie.html"><span
+                  class="material-symbols-outlined">functions</span>&nbsp&nbsp Calorie calculator</a>
+            </li>
+            <hr style="color:white">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="login.html"><span class="material-symbols-outlined">login</span>&nbsp&nbsp
+                Sign Up/Log In</a>
+            </li>
+            <li class="nav-item" style="position: absolute;bottom:15px;">
+              <a class="nav-link text-light" href="profile.html"><span
+                  class="material-symbols-outlined">settings</span>&nbsp&nbsp
+                Settings</a>
+            </li>
+            <li class="nav-item" style="position: absolute;bottom:65px;">
+              <a class="nav-link text-light" href="contact.html"><span
+                  class="material-symbols-outlined">help</span>&nbsp&nbsp Need
+                Help</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <br><br><br>
+  <div class="wcontainer">
+    <div class="workout" onclick="toggleExercise('beginner-exercises')">
+      <img src="IMG_8539.jpg" alt="Beginner Workout">
+      <h2 class="sections">Beginner Workout</h2>
+      <ul class="exercise" id="beginner-exercises">
+        <li>Push-ups</li>
+        <li>Squats</li>
+        <li>Plank</li>
+        <li>Lunges</li>
+        <li>Crunches</li>
+        <li>Jumping Jacks</li>
+      </ul>
+    </div>
+
+    <div class="workout" onclick="toggleExercise('moderate-exercises')">
+      <img src="IMG_8541.jpg" alt="Moderate Workout">
+      <h2 class="sections">Moderate Workout</h2>
+      <ul class="exercise" id="moderate-exercises">
+        <li>Mountain Climbers</li>
+        <li>Burpees</li>
+        <li>High Knees</li>
+        <li>Leg Raises</li>
+        <li>Bicycle Crunches</li>
+        <li>Skipping Rope</li>
+        <li>Box Jumps</li>
+      </ul>
+    </div>
+
+    <div class="workout" onclick="toggleExercise('hardcore-exercises')">
+      <img src="IMG_8534.jpg" alt="Hardcore Workout"><br>
+      <h2 class="sections">Hardcore Workout</h2>
+      <ul class="exercise" id="hardcore-exercises">
+        <li>Deadlifts</li>
+        <li>Barbell Squats</li>
+        <li>Handstand Push-ups</li>
+        <li>Pistol Squats</li>
+        <li>Burpee Pull-ups</li>
+        <li>Thrusters</li>
+      </ul>
+    </div>
+    <div class="workout" onclick="toggleExercise('extreme-cardio-exercises')">
+      <img src="IMG_8537.jpg" alt="Extreme Cardio Workout">
+      <h2 class="sections">Extreme Cardio Workout</h2>
+      <ul class="exercise" id="extreme-cardio-exercises">
+        <li>HIIT Running</li>
+        <li>Jump Rope Intervals</li>
+        <li>Boxing Circuit</li>
+        <li>Stair Climbing</li>
+        <li>Burpee Variations</li>
+        <li>Agility Ladder Drills</li>
+        <li>Rowing Sprints</li>
+      </ul>
+    </div>
+
+    <div class="workout" onclick="toggleExercise('core-strength-exercises')">
+      <img src="IMG_8540.jpg" alt="Core Strength Workout">
+      <h2 class="sections">Core Strength Workout</h2>
+      <ul class="exercise" id="core-strength-exercises">
+        <li>Plank Variations</li>
+        <li>Russian Twists</li>
+        <li>Leg Raises</li>
+        <li>Flutter Kicks</li>
+        <li>Bicycle Crunches</li>
+        <li>Side Planks</li>
+        <li>V-ups</li>
+      </ul>
+    </div>
+
+    <div class="workout" onclick="toggleExercise('yoga-flexibility-exercises')">
+      <img src="IMG_8538.jpg" alt="Yoga for Flexibility">
+      <h2 class="sections">Yoga for Flexibility</h2>
+      <ul class="exercise" id="yoga-flexibility-exercises">
+        <li>Downward-Facing Dog</li>
+        <li>Forward Fold</li>
+        <li>Pigeon Pose</li>
+        <li>Standing Forward Bend</li>
+        <li>Triangle Pose</li>
+        <li>Bridge Pose</li>
+        <li>Seated Forward Bend</li>
+      </ul>
+    </div>
+
+    <div class="workout" onclick="toggleExercise('football-training-exercises')">
+      <img src="IMG_8536.jpg" alt="Football Training">
+      <h2 class="sections">Football Training</h2>
+      <ul class="exercise" id="football-training-exercises">
+        <li>Around the World Dribble</li>
+        <li>Shooting Drills</li>
+        <li>Passing Drills</li>
+        <li>Cone Drills</li>
+        <li>Headers Practice</li>
+        <li>1v1 Battles</li>
+        <li>Goalkeeper Training</li>
+      </ul>
+    </div>
+
+    <div class="workout" onclick="toggleExercise('pilates-toning-exercises')">
+      <img src="IMG_8532.jpg" alt="Pilates Toning">
+      <h2 class="sections">Pilates Toning</h2>
+      <ul class="exercise" id="pilates-toning-exercises">
+        <li>Roll Up</li>
+        <li>Hundreds</li>
+        <li>Leg Circles</li>
+        <li>Side Leg Lift Series</li>
+        <li>Teaser</li>
+        <li>Swimming</li>
+        <li>Side Bend</li>
+      </ul>
+    </div>
+
+    <div class="workout" onclick="toggleExercise('upper-body-strength-exercises')">
+      <img src="IMG_8533.jpg" alt="Upper Body Strength">
+      <h2 class="sections">Upper Body Strength</h2>
+      <ul class="exercise" id="upper-body-strength-exercises">
+        <li>Push-ups</li>
+        <li>Pull-ups</li>
+        <li>Shoulder Press</li>
+        <li>Bicep Curls</li>
+        <li>Tricep Dips</li>
+        <li>Rows</li>
+        <li>Bench Press</li>
+      </ul>
+    </div>
+
+    <div class="workout" onclick="toggleExercise('lower-body-blast-exercises')">
+      <img src="IMG_8535.jpg" alt="Lower Body Blast">
+      <h2 class="sections">Lower Body Blast</h2>
+      <ul class="exercise" id="lower-body-blast-exercises">
+        <li>Squats</li>
+        <li>Lunges</li>
+        <li>Deadlifts</li>
+        <li>Leg Press</li>
+        <li>Calf Raises</li>
+        <li>Step-ups</li>
+        <li>Glute Bridge</li>
+      </ul>
+    </div>
+
+    <div class="workout" onclick="toggleExercise('mindfulness-meditation-exercises')">
+      <img src="IMG_8542.jpg" alt="Mindfulness Meditation">
+      <h2 class="sections">Mindfulness Meditation</h2>
+      <ul class="exercise" id="mindfulness-meditation-exercises">
+        <li>Body Scan</li>
+        <li>Deep Breathing</li>
+        <li>Loving-Kindness Meditation</li>
+        <li>Walking Meditation</li>
+        <li>Visualization</li>
+        <li>Mantra Meditation</li>
+        <li>Gratitude Meditation</li>
+      </ul>
+    </div>
+
+
+    <div class="workout" onclick="toggleExercise('general-fitness-exercises')">
+      <img src="IMG_8516.jpg" alt="General Fitness">
+      <h2 class="sections">General Fitness</h2>
+      <ul class="exercise" id="general-fitness-exercises">
+        <li>Running</li>
+        <li>Cycling</li>
+        <li>Swimming</li>
+        <li>Walking</li>
+        <li>Bodyweight Exercises</li>
+        <li>Resistance Training</li>
+        <li>Stretching</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="mainfoot">
+    <div class="foot">
+      <h9 style="font-size: 20px;color:white;"><b>About Us</b></h9>
+      <br><br>
+      <p>FitFocus is your ultimate fitness companion, offering a range of features to support your journey to a
+        healthier lifestyle. Track your calories, set personalized goals, compete with friends, and monitor your
+        progress with ease. Whether you're a fitness enthusiast or just starting, FitFocus is your key to a fitter,
+        healthier you.</p>
+    </div>
+    <div class="foot">
+      <h9 style="font-size: 20px;color:white;"><b>News Letter</b></h9>
+      <br><br>
+      <p>Sign up for the latest products and updates</p>
+      <br>
+      <h9 style="font-size: 20px;color:white;"><b>Follow Us On</b></h9>
+      <br><br>
+      <a href="#" class="fa fa-facebook"></a>&nbsp&nbsp<a href="#" class="fa fa-twitter"></a>&nbsp&nbsp<a href="#"
+        class="fa fa-linkedin"></a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleExercise(id) {
+      var exerciseLists = document.querySelectorAll('.exercise');
+      exerciseLists.forEach(function (list) {
+        if (list.id === id) {
+          if (list.style.display === "none") {
+            list.style.display = "block";
+          } else {
+            list.style.display = "none";
+          }
+        } else {
+          list.style.display = "none";
+        }
+      });
+    }
+  </script>
+
+</body>
+
+</html>
